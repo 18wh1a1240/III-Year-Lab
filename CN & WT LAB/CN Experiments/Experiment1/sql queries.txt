@@ -1,5 +1,0 @@
-1.
-SELECT Customer_T.Customer_ID from (SELECT Customer_ID from Customer_T UNION ALL select Customer_ID from Order_T) GROUP BY Customer_ID;
-
-3.
-SELECT Product_T.Product_ID from (SELECT Product_ID from Product_T UNION ALL SELECT Product_ID, MAX(Order_Quantity) from Product_D) GROUP BY Product_ID;
