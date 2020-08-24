@@ -11,4 +11,4 @@ iii. bit stuffing
 2.
 3.
 
-![output](CharCountOutput.png)
+![output](CharCountOutput.PNG)
