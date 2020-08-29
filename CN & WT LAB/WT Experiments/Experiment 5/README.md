@@ -19,4 +19,4 @@ g) Order Conformation
 
 ###Output
 
-![output](RegisterOutput.PNG)
+![output](RegisterOutput.png)
