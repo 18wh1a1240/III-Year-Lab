@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("far.jpg");
+
+  min-height: 1500px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  right: 300px;
+  margin: 50px;
+  width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <form class="container">
+    <h1>Register Here</h1>
+	
+	<label for="userName"><b>user Name</b></label>
+	<input type="text" placeholder="Enter UserName" name="UserName" >
+	<div>
+	<label for="firstName"> <b>first Name</b></label>
+	<input type="text" placeholder="Enter first Name" name="firstName">
+	
+	<label for="lastName"><b>last Name</b></label>
+	<input type="text" placeholder="Enter last Name" name="last Name">
+	</div>
+	
+	<div>
+	<p>gender</p>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+	</div><br />
+	<label for="birthday">birthday</label>
+	<input type="date" id="birthday" name="birthday">
+	<br><br>
+	<label for="mobile"> <b>Mobile</b></label>
+	<input type="text" placeholder="Enter Mobile" name="Mobile">
+	
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw">
+	
+	<label for="psw"><b>Confirm Password</b></label>
+	<input type="password" placeholder="Re-Enter Password" name="psw">
+	
+	<div>
+	<p>Hobbies</p>
+			<input type="checkbox" id="1" name="1" value="Dancing">
+			<label for="1">Dancing</label><br>
+			<input type="checkbox" id="2" name="2" value="Singing">
+			<label for="2">Singing</label><br>
+			<input type="checkbox" id="3" name="3" value="Reading">
+			<label for="3">Reading</label><br><br>
+	</div>
+	
+	<label for="Address"><b>Address</b></label>
+	<input type="text" placeholder="Enter your Address" name="Address">
+
+    <button type="submit" class="btn">Register</button>
+  </form>
+</div>
+
+</body>
+</html>
