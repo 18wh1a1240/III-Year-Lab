@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Java Script</title>
+	</head>
+	<body>
+	<p id = "demo">Starting the Java Script Part</p>
+	<p> Java Script is both server side and client side language</p>
+		<button onclick="random_fn()">Random Function</button>
+		<button onmouseover="highestElement()">Highest Number</button>
+		<button onmouseout="asscending()">Ascending order</button>
+		<button onclick = "desc()">Ascending order</button>
+		<button onclick="displayDate()">Display Date</button>
+		
+		<script>
+			var string1 = "Anuhya Javvaji"
+			var number = 16
+			var floatn = 5.2
+			var obj = {triangle : 3, square : 4}
+			var a
+			var college = "BVRIT HYDERABAD College of Engineering for Women"
+			/*comment line*/
+			/* we use === for equal value and datatype*/
+			document.getElementById("demo").innerHTML = "Element By Id"
+			document.write("write")
+			window.alert("alert message")
+			console.log("console log output")
+			
+			console.log(string1)
+			console.log(number)
+			console.log(floatn)
+			console.log(typeof(string1))
+			console.log(typeof(number))
+			console.log(typeof(true))
+			console.log(typeof(obj))
+			consiole.log(typeof(a))
+			
+			console.log(0101 & 0010)
+			console.log(!5)
+			console.log(-0101)
+			console.log(string1.length)
+			console.log(college.indexOf("college", 10))
+			console.log(college.search("of"))
+			console.log(college.slice(3,5))
+			console.log(college.trim())
+			console.log(college.substring(16, 25))
+			console.log(college.toLowerCase())
+			
+			var arr = ["18wh1a1207" , "18wh1a1244", "18wh1a1240", "18wh1a1234"]
+			var arr1 = [1207 , 1244, 1240, 1234, 1237, 1243, 1238, 1252]
+			console.log(arr)
+			console.log(arr.sort())
+			console.log(arr1.sort())
+			console.log("Highest Element " + highestElement())
+
+			function highestElement()
+			{
+				var sorted_arr =ages.sort(function(a, b) {return a-b})
+				var highest = sorted_arr[sorted_arr.length-1]
+				console.log(highest)
+			}
+
+			
+			function ascending() {
+				var sorted_array = arr1.sort(function(a, b) {return a-b})
+				console.log("ascending function : ", sorted_array)
+			}
+			
+			function descending()
+			{
+				var sorted_array = arr1.sort(function(a, b) {return b-a})
+				console.log("descending function :" , sorted_array)
+			}
+
+			function square(a) {
+				return a*a
+			}
+
+			console.log(square(10))
+			
+			console.log("Random fn")
+			
+			function random_fn() {
+				console.log(ages.sort(function(a, b) { return 0.5-Math.random()}))
+			}
+			
+			console.log(random_fn())
+
+			
+			/*console.log(Math.max.apply(null, arr))
+			console.log(Math.min.apply(null, arr))*/
+			console.log(Math.max.apply(null, arr1))
+			console.log(Math.min.apply(null, arr1))
+			
+			var empty = []
+			console.log(empty.forEach(fn))
+			
+			function fn(el) {
+				console.log(el)
+			}
+			
+			function add(el)
+			{
+				el = el + 1
+				console.log(el)
+			}
+			
+			
+		</script>
+	</body>
+</html>
