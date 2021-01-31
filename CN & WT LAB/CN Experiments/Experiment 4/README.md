@@ -33,4 +33,4 @@ step 5: for(i=1;i<n;i++)
  distance[w]+cost[w][v])
 
 ### Output
-![output](DijkstrasAlgorithm.png)
+![output](DijkstrasAlgorithm.PNG)
