@@ -1,0 +1,24 @@
+# Experiment 6
+
+## Aim of the Experiment
+To implement Distance Vector Routing Algorithm.
+
+### Steps or Procedure of the Experiment
+At each node x,
+#### Initialization
+for all destinations y in N:
+Dx(y) = c(x,y) // If y is not a neighbour then c(x,y) = ∞
+for each neighbour w
+Dw(y) =? for all destination y in N.
+for each neighbour w
+send distance vector Dx = [ Dx(y) : y in N ] to w
+#### loop
+ wait (until I receive any distance vector from some neighbour w)
+ for each y in N:
+ Dx(y) = minv {c(x,v)+Dv(y)}
+If Dx(y) is changed for any destination y
+Send distance vector Dx = [ Dx(y) : y in N ] to all neighbours
+#### Forever
+
+### Output
+![output](DIstanceVectorRoutingAlgorithm.PNG)
