@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+	</head>
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* Float four columns side by side */
+		.column {
+			float: left;
+			width: 25%;
+			padding: 0 10px;
+		}
+
+		/* Remove extra left and right margins, due to padding in columns */
+		.row {
+			margin: 0 -5px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Style the counter cards */
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+			padding: 16px;
+			text-align: center;
+			background-color: #f1f1f1;
+		}
+
+		/* Responsive columns - one column layout (vertical) on small screens */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #111;
+		}
+	</style>
+
+	<body style="background-color:powderblue;">
+		<ul>
+			<li>
+				<a href="registerePage.html">Register</a></li>
+			<li>
+				<a href="Login.html">Login</a></li>
+		</ul>
+	<div class="row">
+		<div class="column">
+	      <div class="w3-card-4">
+				<img src="Harry Potter.jfif">
+			    <div class="w3-container w3-center">
+						<h3 >Harry Potter</h3>
+						<p>All Series of Harry Potter</p>
+						<h2>15,000/-</h2>
+						<button class="btn btn-primary">Add To Cart</button>
+					</div>
+				</div>
+		</div>
+		   
+		<div class="column">
+		  <div class="w3-card-4">
+		   <img src="Avengers.jfif">
+			<div class="w3-container w3-center">
+					<h3>Avengers</h3>
+					<p>All Comic Series of Avengers</p>
+					<h2>10,000/-</h2>
+				    <button class="btn btn-primary">Add To Cart</button>
+			</div>
+	      </div>
+	  </div>
+	  
+	<div class="column">
+		<div class="w3-card-4">
+			<img src="Wings of Fire.jfif">
+			<div class="w3-container w3-center">
+				<h3 >Wings of Fire</h3>
+				<p>An Autobiography of Dr.APJ Abdul Kalam</p>
+				<h2>999/-</h2>
+				<button class="btn btn-primary">Add To Cart</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="column">
+		<div class="w3-card-4">
+			<img src="Vision 2020.jfif">
+			<div class="w3-container w3-center">
+				<h3 >India Vision 2020</h3>
+				<p>India Vision 2020</p>
+				<h2>9,999/-</h2>
+				<button class="btn btn-primary">Add To Cart</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</body>
+
+</html>

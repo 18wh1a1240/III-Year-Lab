@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Login</title>
+</head>
+
+<body>
+<div class="container">
+<form>
+
+	<div class="input-group">
+		<span class="input-group-addon">
+			<i class="glyphicon glyphicon-user"></i></span>
+		<input type="text" class="form-control"  placeholder="login Id" ><br/>
+	</div>
+
+	<div class="input-group">
+		<span class="input-group-addon">
+			<i class="glyphicon glyphicon-lock"></i></span>
+		<input type="password" class="form-control"placeholder="password"><br/>
+	</div>
+
+	<button class="btn btn-primary" [disabled] = "!loginForm.valid"> Login</button>
+
+</form>
+</body>
