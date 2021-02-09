@@ -22,7 +22,7 @@ int main()
             }
             else {
                 total = total - packet[j];
-                 printf("Input from line %d with rate %d is added to the bucket\n Current bucket size is %d\n",j+1,packet[j],total);
+                 printf("Input from line %d with rate %d is removed from the bucket\n Current bucket size is %d\n",j+1,packet[j],total);
 
             }
         }
