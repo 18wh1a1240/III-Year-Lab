@@ -5,4 +5,4 @@ Write a Ruby script to create a new string which is n copies of a given string w
 integer
 
 ### Output
-![output](exp1output.jpg)
+![output](exp1output.JPG)
